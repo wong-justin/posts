@@ -1,0 +1,13 @@
+<p>
+  {%- if page.prev_in_series -%}
+    <a href="/{{ page.prev_in_series }}">← Prev</a>
+    &nbsp;&nbsp;
+  {%- endif -%}
+
+  {{page.nth_of_series}}
+
+  {%- if page.next_in_series -%}
+    &nbsp;&nbsp;&nbsp;
+    <a href="/{{ page.next_in_series }}">Next →</a>
+  {%- endif -%}
+</p>

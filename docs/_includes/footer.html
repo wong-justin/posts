@@ -1,0 +1,23 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper footer-col-wrapper">
+
+    <div class="footer-col">
+      <p>&copy;
+        <span id="year">{{ site.time | date: '%Y' }}</span>
+      </p>
+      <script type="text/javascript">
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+    </div>
+
+    <div class="footer-col">
+      <div class="social-links">
+        {%- include social.html -%}
+      </div>
+    </div>
+
+  </div>
+
+</footer>
